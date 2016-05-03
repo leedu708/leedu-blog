@@ -1,4 +1,4 @@
-var blog = angular.module('blog', ['ui.router', 'restangular', 'ngAnimate', 'Devise', 'ui.bootstrap'])
+var blog = angular.module('blog', ['ui.router', 'restangular', 'ngAnimate', 'Devise'])
 
 .config( ['$stateProvider', '$urlRouterProvider', 'RestangularProvider',
   function($stateProvider, $urlRouterProvider, RestangularProvider) {
@@ -18,9 +18,7 @@ var blog = angular.module('blog', ['ui.router', 'restangular', 'ngAnimate', 'Dev
     .state('home', {
       url: '/home',
       templateUrl: '/templates/home.html',
-      controller: ['$scope', '$rootScope', function($scope, $rootScope) {
-        $rootScope.title = 'Home';
-      }]
+      controller: 'HomeCtrl'
     })
 
   }])

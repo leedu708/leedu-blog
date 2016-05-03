@@ -30,9 +30,6 @@ gem 'faker'
 gem 'devise'
 gem 'binding_of_caller'
 
-# bootstrap
-gem 'bootstrap-sass', '~> 3.3.6'
-
 group :development, :test do
   gem 'jazz_hands', github: 'nixme/jazz_hands', branch: 'bring-your-own-debugger'
   gem 'pry-byebug'

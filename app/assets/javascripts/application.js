@@ -16,8 +16,6 @@
 //= require angular
 //= require angular-devise
 //= require angular-ui-router
-//= require ui-bootstrap-tpls-1.3.2.min
-//= require bootstrap-sprockets
 
 //= require angular-animate
 //= require restangular
